@@ -1,30 +1,56 @@
 <p align="center">
-    <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
-    </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
+
+    <h1 align="center">Yii 2 Advanced Project Template with api</h1>
     <br>
 </p>
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Yii2 Advanced Application Template with RESTful API configured. Take a look at http://budiirawan.com/setup-restful-api-yii2/ for more detail explanation
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+## Install Composer Packages
+You need [Composer](http://getcomposer.org) installed first.
+```
+composer self-update
+```
+```
+composer install
+```
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+## Run Yii Init
+Open terminal and go to the project folder and run
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+Mac/Linux
+```
+php ./init
+```
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
+Windows
+```
+init
+```
+Choose **development** environment and finish the steps.
+
+## Configure Database
+create your database and configure it in **common/config/main-local.php**
+
+## Run Database Migration
+This command will create new country table and populate its data
+
+```
+./yii migrate
+```
+
+## Enable Mod Rewrite if you use Apache
+Make sure you already enable this mod. Follow this [Tutorial](http://stackoverflow.com/questions/869092/how-to-enable-mod-rewrite-for-apache-2-2)
 
 DIRECTORY STRUCTURE
 -------------------
 
 ```
+api
+    config/              contains shared configurations
+    modules/             contains modules versions
+    runtime/             contains files generated during runtime
+    web/ 				 contains the entry script and Web resources
 common
     config/              contains shared configurations
     mail/                contains view files for e-mails
