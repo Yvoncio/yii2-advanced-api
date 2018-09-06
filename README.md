@@ -1,5 +1,4 @@
 <p align="center">
-
     <h1 align="center">Yii 2 Advanced Project Template with api</h1>
     <br>
 </p>
