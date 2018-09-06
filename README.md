@@ -17,6 +17,11 @@ composer install
 ## Run Yii Init
 Open terminal and go to the project folder and run
 
+Vendor
+```
+extract vendor
+```
+
 Mac/Linux
 ```
 php ./init
