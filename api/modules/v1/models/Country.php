@@ -4,7 +4,7 @@ use \yii\db\ActiveRecord;
 /**
  * Country Model
  *
- * @author Budi Irawan <deerawan@gmail.com>
+ * @author yvoncio 
  */
 class Country extends ActiveRecord
 {
